@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTabs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Search Engine</h1>
+            <div class="tabs" id="tabContainer">
+                <button class="tab" onclick="openTab(event, 'Home')">Home</button>
+                <button class="tab" onclick="openTab(event, 'About')">About</button>
+                <button class="tab" onclick="openTab(event, 'Contact')">Contact</button>
+            </div>
+            <button id="addTabButton">Add Tab</button>
+        </header>
+        <main>
+            <div id="Home" class="tab-content">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div id="About" class="tab-content" style="display:none;">
+                <h2>About Us</h2>
+                <p>This is a simple search engine created for demonstration purposes.</p>
+            </div>
+            <div id="Contact" class="tab-content" style="display:none;">
+                <h2>Contact Us</h2>
+                <p>Email: example@example.com</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
